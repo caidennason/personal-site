@@ -5,7 +5,7 @@ function Resume(){
     console.log('hello')
 
     return(
-        <div>
+        <div id="resume">
         Hello from Resume
         </div>
     )

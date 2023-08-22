@@ -8,21 +8,20 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 function App() {
   return (
     <div>
-      <Box>
-        <AppBar position="static"> 
-        <Toolbar>
+        <AppBar position="static" sx={{ backgroundColor: 'black', color: 'white' }}> 
+        <Toolbar sx={{justifyContent: 'center'}}>
             <Button color="inherit" component={Link} to='/'>About Me</Button>
             <Button color="inherit" component={Link} to="/resume">Resume</Button>
             <Button color="inherit" component={Link} to="/projects">Projects</Button>
         </Toolbar>
         </AppBar>
-      </Box>
 
     <Routes>
       <Route path='/' element={<About />} />
       <Route path='/resume' element={<Resume />}/>
       <Route path='/projects' element={<Projects />}/>
     </Routes>   
+  
     </div>
   );
 }
